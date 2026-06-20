@@ -38,16 +38,14 @@ git config user.email "kyus.daison@gmail.com"
 git config user.name  "Kyus Daison"
 
 git add -A
-if git diff --cached --quiet && git rev-parse HEAD >/dev/null 2>&1; then
-  echo "No changes to deploy."
-  pause; exit 0
+if git diff --cached --quiet; then
+  echo "No new file changes — will push any existing commits."
+else
+  echo ""
+  echo "Changes to be deployed:"
+  git status --short
+  git commit -q -m "Deploy Civic Architecture Lab (CAL) site"
 fi
-
-echo ""
-echo "Changes to be deployed:"
-git status --short
-
-git commit -q -m "Deploy Civic Architecture Lab (CAL) site"
 
 echo ""
 echo "Pushing to $REPO ($BRANCH)..."
