@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-fcb-dark;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+  body {
+    @apply bg-fcb-dark text-gray-200 antialiased overflow-x-hidden;
+    margin: 0;
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    background-image:
+      radial-gradient(circle at 72% 8%, rgba(185, 214, 231, 0.07), transparent 34%),
+      radial-gradient(circle at 18% 0%, rgba(212, 175, 55, 0.06), transparent 30%),
+      linear-gradient(180deg, #05080d 0%, #02050a 100%);
+  }
+  ::selection {
+    background: rgba(212, 175, 55, 0.26);
+    color: #fff;
+  }
+  a:focus-visible, button:focus-visible {
+    outline: 3px solid rgba(212, 175, 55, 0.8);
+    outline-offset: 4px;
+  }
+}
+
+@layer components {
+  .section-shell {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.045);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.024), rgba(255, 255, 255, 0.008)),
+      radial-gradient(circle at 12% 8%, rgba(212, 175, 55, 0.06), transparent 27%),
+      radial-gradient(circle at 88% 78%, rgba(14, 165, 233, 0.05), transparent 28%),
+      #03070d;
+  }
+  .institution-card {
+    border: 1px solid rgba(255, 255, 255, 0.095);
+    border-radius: 8px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.062), rgba(255, 255, 255, 0.018)),
+      linear-gradient(135deg, rgba(212, 175, 55, 0.032), rgba(185, 214, 231, 0.018) 52%, transparent);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.06),
+      0 22px 60px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(18px);
+  }
+  .institution-card:hover {
+    border-color: rgba(212, 175, 55, 0.24);
+  }
+  .gold-gradient-text {
+    background: linear-gradient(to right, #cba84d, #f3e5ab 46%, #cba84d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-right: 0.12em;
+  }
+  .sovereign-rule {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(212, 175, 55, 0.02), rgba(212, 175, 55, 0.72), rgba(185, 214, 231, 0.18), transparent);
+  }
+}
