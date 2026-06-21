@@ -31,7 +31,7 @@ const HomePage: React.FC = () => {
   const architectureLayers =
     lang === 'zh'
       ? [
-          { title: '公共授权', text: '先界定法律边界、政策目标与主权监督。', icon: Landmark },
+          { title: '公共授权', text: '先界定法律边界、政策目标与公共监督。', icon: Landmark },
           { title: '制度与治理', text: '明确机构职责、问责关系与运行规则。', icon: Scale },
           { title: '身份与准入', text: '建立可信身份、资格、凭证与服务访问。', icon: Fingerprint },
           { title: '证据与记录', text: '让参与、服务与合规形成可审阅的证据层。', icon: Database },
@@ -48,7 +48,7 @@ const HomePage: React.FC = () => {
       ? [
           { label: '不是产品堆叠', value: '从授权、规则和监督开始' },
           { label: '不是短期试验', value: '为长期公共能力而设计' },
-          { label: '不是私营迁移叙事', value: '服务于公共系统与可信参与' },
+          { label: '不是私人移民叙事', value: '服务于公共系统与可信参与' },
         ]
       : [
           { label: 'Not product stacking', value: 'Mandate, rules and oversight come first' },
@@ -62,7 +62,7 @@ const HomePage: React.FC = () => {
           { title: '授权先于技术', text: '每个系统都应先有清晰的公共目的、法律边界与责任主体。' },
           { title: '证据可以被审阅', text: '身份、服务、参与和合规记录必须形成可复核的证据层。' },
           { title: '监督内建于设计', text: '监管、审计和治理不是后补功能，而是架构的一部分。' },
-          { title: '主权责任保留', text: '关键数据、记录和规则保持在辖区授权与公共监督之下。' },
+          { title: '公共责任保留', text: '关键数据、记录和规则保持在辖区授权与公共监督之下。' },
         ]
       : [
           { title: 'Mandate Before Technology', text: 'Every system begins with a clear public purpose, legal perimeter and accountable authority.' },
@@ -268,7 +268,7 @@ const HomePage: React.FC = () => {
             </h2>
             <p className="mt-6 text-lg font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '一个可信公共系统不只需要漂亮的界面，也需要可解释的授权、可追溯的证据、可执行的服务规则和长期监督能力。赛域实验室将这些要求前置为系统架构本身。'
+                ? '可信公共系统不只需要清晰界面，更需要可解释的公共授权、可追溯的证据、可执行的服务规则和可持续的监督能力。赛域实验室把这些要求前置为系统架构的一部分。'
                 : 'A trusted public system needs more than a polished interface. It requires explainable mandate, traceable evidence, enforceable service rules and durable oversight. CAL treats these requirements as the architecture itself.'}
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -367,7 +367,7 @@ const HomePage: React.FC = () => {
             </h2>
             <p className="mt-6 text-lg font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '赛域实验室的合作方式不是一次性交付材料，而是帮助公共机构把复杂愿景转化为可授权、可建设、可监督、可长期维护的制度基础设施。每一阶段都服务于同一个目标：让系统在公共责任之下稳定运行。'
+                ? '赛域实验室不以一次性交付为中心，而是帮助公共机构把复杂愿景转化为可授权、可建设、可监督、可长期维护的制度基础设施。每一阶段都指向同一件事：让系统在清晰公共责任之下稳定运行。'
                 : 'CAL is not organised around one-off deliverables. It helps public institutions translate complex ambitions into infrastructure that can be authorised, built, supervised and maintained. Each phase serves the same objective: systems that operate under public responsibility.'}
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">

@@ -18,7 +18,7 @@ const WhatWeDoPage: React.FC = () => {
         { title: '授权先于方案', text: '先确认公共目的、法律边界与发起机构，再进入技术或产品层面的设计。', icon: Landmark },
         { title: '制度先于界面', text: '先设计责任结构、服务规则与监督路径，界面只是制度运行的外显层。', icon: Scale },
         { title: '证据先于规模', text: '每一项身份、服务与记录都应具备可审阅、可验证、可追责的证据基础。', icon: Database },
-        { title: '托管先于扩张', text: '长期治理、运营责任与公共信任机制必须在扩张之前被设计清楚。', icon: ShieldCheck },
+        { title: '管护先于扩张', text: '长期治理、运行责任与公共信任机制必须在扩张之前被设计清楚。', icon: ShieldCheck },
       ]
     : [
         { title: 'Mandate before solution', text: 'Public purpose, legal perimeter and institutional sponsor are clarified before product or technology choices.', icon: Landmark },
@@ -32,7 +32,7 @@ const WhatWeDoPage: React.FC = () => {
     : ['Public purpose', 'Institutional responsibility', 'Identity & services', 'Evidence & oversight'];
 
   const titleLines = lang === 'zh'
-    ? ['一个制度设计实验室', '而非普通咨询公司']
+    ? ['制度设计实验室', '不是普通咨询机构']
     : ['An Institutional Design Lab', 'Not an Ordinary Consultancy'];
 
   const operatingQuestions = lang === 'zh'
@@ -50,7 +50,7 @@ const WhatWeDoPage: React.FC = () => {
       ];
 
   const audienceFrame = lang === 'zh'
-    ? '适用于需要把公共授权、数字身份、服务访问、合规监督与长期运营放在同一制度框架下推进的机构。'
+    ? '适用于需要把公共授权、数字身份、服务访问、合规监督与长期运行放在同一制度框架下推进的机构。'
     : 'Built for institutions that need public mandate, digital identity, service access, compliance oversight and long-term operations to work inside one governed framework.';
 
   return (
@@ -91,7 +91,7 @@ const WhatWeDoPage: React.FC = () => {
             </h2>
             <p className="mt-6 text-base font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '赛域实验室的工作不是从功能清单开始，而是从公共授权、责任边界、证据链和运行托管开始。这样设计出来的系统，才有可能被政府、监管方、合作机构与公众长期信任。'
+                ? '赛域实验室不从功能清单开始，而是从公共授权、责任边界、证据链条与运行管护开始。只有先把这些基础关系设计清楚，系统才可能被政府、监管方、合作机构和公众长期信任。'
                 : 'CAL does not begin with a feature list. It begins with public mandate, accountability boundaries, evidence chains and operating stewardship, so the resulting system can be trusted by governments, regulators, partners and the public over time.'}
             </p>
           </div>

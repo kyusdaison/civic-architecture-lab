@@ -26,6 +26,9 @@
       auto,
       auto;
   }
+  html:lang(zh-Hans) body {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  }
   ::selection {
     background: rgba(212, 175, 55, 0.26);
     color: #fff;
@@ -64,20 +67,57 @@
     line-height: 1.05;
   }
   .brand-lockup-cn span:first-child {
-    font-family: "Playfair Display", Georgia, "Songti SC", "STSong", serif;
+    font-family: "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", Georgia, serif;
     font-size: clamp(1.12rem, 2.1vw, 1.72rem);
     font-weight: 600;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.02em;
     white-space: nowrap;
   }
   .brand-lockup-cn span:last-child {
     color: rgba(229, 193, 88, 0.92);
-    font-size: clamp(0.58rem, 0.8vw, 0.72rem);
+    font-size: clamp(0.54rem, 0.66vw, 0.64rem);
     font-weight: 800;
-    letter-spacing: 0.17em;
+    letter-spacing: 0.12em;
     line-height: 1.25;
-    text-transform: uppercase;
     white-space: nowrap;
+  }
+  html:lang(zh-Hans) .page-hero-title,
+  html:lang(zh-Hans) h1,
+  html:lang(zh-Hans) h2,
+  html:lang(zh-Hans) h3 {
+    font-family: "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", Georgia, serif;
+    letter-spacing: 0;
+  }
+  html:lang(zh-Hans) .page-hero-title {
+    line-height: 1.18;
+  }
+  html:lang(zh-Hans) .page-hero-lede {
+    line-height: 1.86;
+  }
+  html:lang(zh-Hans) .section-eyebrow,
+  html:lang(zh-Hans) .eyebrow-chip,
+  html:lang(zh-Hans) .primary-action,
+  html:lang(zh-Hans) .secondary-action,
+  html:lang(zh-Hans) .signal-chip,
+  html:lang(zh-Hans) .dossier-token,
+  html:lang(zh-Hans) .closing-trust-node {
+    letter-spacing: 0.12em;
+    text-transform: none;
+  }
+  html:lang(zh-Hans) .section-eyebrow,
+  html:lang(zh-Hans) .eyebrow-chip {
+    letter-spacing: 0.18em;
+  }
+  html:lang(zh-Hans) .primary-action,
+  html:lang(zh-Hans) .secondary-action {
+    font-size: 0.72rem;
+  }
+  html:lang(zh-Hans) .signal-chip,
+  html:lang(zh-Hans) .topic-token,
+  html:lang(zh-Hans) .standard-row,
+  html:lang(zh-Hans) .dossier-token,
+  html:lang(zh-Hans) .contact-protocol-item {
+    line-height: 1.58;
   }
   .section-shell {
     position: relative;

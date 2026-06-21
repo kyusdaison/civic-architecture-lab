@@ -11,7 +11,7 @@ const InsightsPage: React.FC = () => {
       ? [
           {
             title: '制度设计研究',
-            text: '研究公共授权、机构职责、参与规则与长期问责如何形成可运行的制度架构。',
+            text: '研究公共授权、机构职责、参与规则与长期问责如何共同形成可运行的制度架构。',
             icon: Landmark,
           },
           {
@@ -97,7 +97,7 @@ const InsightsPage: React.FC = () => {
             </div>
             <p className="text-lg font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '赛域实验室的研究不是为了制造概念，而是为了帮助公共机构判断一个系统是否能够被授权、被建设、被监督，并在长期运行中保持公共价值。'
+                ? '赛域实验室的研究不是制造概念，而是帮助公共机构判断一个系统能否被授权、被建设、被监督，并在长期运行中持续保有公共价值。'
                 : 'CAL research is not built around abstract commentary. It helps public institutions decide whether a system can be authorised, built, supervised and maintained as public value over time.'}
             </p>
           </div>
@@ -133,7 +133,7 @@ const InsightsPage: React.FC = () => {
             </div>
             <p className="mb-7 text-base font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '每一项研究主题最终都要回到同一个判断：公共系统是否能够被清晰授权、稳定运行、有效监督，并在跨机构协作中保持可信。'
+                ? '每一项研究主题最终都要回到同一个判断：公共系统能否被清晰授权、稳定运行、有效监督，并在跨机构协作中保持可信。'
                 : 'Every research theme returns to one test: whether a public system can be clearly authorised, operated with stability, supervised effectively and trusted across institutions.'}
             </p>
             <div className="space-y-3">

@@ -11,8 +11,8 @@ const ContactPage: React.FC = () => {
       ? [
           '公共授权与机构发起',
           '明确的政策或制度目标',
-          '可审阅的治理与合规边界',
-          '长期运行与管护责任',
+          '治理与合规边界可审阅',
+          '长期运行与管护责任清晰',
         ]
       : [
           'Public mandate and institutional sponsorship',
@@ -25,9 +25,9 @@ const ContactPage: React.FC = () => {
     lang === 'zh'
       ? [
           { title: '项目授权背景', text: '说明发起机构、公共目的、辖区边界与当前决策阶段。', icon: Landmark },
-          { title: '制度或政策目标', text: '说明希望解决的公共系统问题，以及预期的制度结果。', icon: FileText },
+          { title: '制度或政策目标', text: '说明希望解决的公共系统问题，以及预期形成的制度结果。', icon: FileText },
           { title: '相关机构关系', text: '列明政府、监管方、公共机构、实施伙伴与责任边界。', icon: Building2 },
-          { title: '治理与合规约束', text: '标明已有法律、监管、数据、身份或监督要求。', icon: ShieldCheck },
+          { title: '治理与合规约束', text: '标明既有法律、监管、数据、身份或监督要求。', icon: ShieldCheck },
         ]
       : [
           { title: 'Mandate context', text: 'Share the sponsoring institution, public purpose, jurisdictional perimeter and current decision stage.', icon: Landmark },
@@ -39,7 +39,7 @@ const ContactPage: React.FC = () => {
   const engagementPath =
     lang === 'zh'
       ? [
-          { step: '01', title: '初步接洽', text: '确认机构背景、公共目的和是否属于赛域实验室的制度设计范围。' },
+          { step: '01', title: '初步接洽', text: '确认机构背景、公共目的，以及项目是否属于赛域实验室的制度设计范围。' },
           { step: '02', title: '授权与边界审阅', text: '梳理法律边界、发起机构、责任主体、监督路径和可执行范围。' },
           { step: '03', title: '制度架构工作', text: '形成身份、服务、证据、合规和运营模型的可审阅框架。' },
           { step: '04', title: '长期管护路径', text: '明确从试点到运行、从治理到扩展的机构责任与迭代机制。' },
@@ -119,11 +119,11 @@ const ContactPage: React.FC = () => {
           <div>
             <span className="section-eyebrow">{lang === 'zh' ? '接洽标准' : 'Engagement Standard'}</span>
             <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
-              {lang === 'zh' ? '适合正式启动合作的条件' : 'Best fit for formal institutional engagement'}
+              {lang === 'zh' ? '正式合作的基本条件' : 'Best fit for formal institutional engagement'}
             </h2>
             <p className="mt-6 text-base font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '赛域实验室更适合处理需要公共授权、制度边界、身份与服务规则、证据层和长期监督共同成立的项目。我们优先服务具有明确机构责任和公共价值的合作。'
+                ? '赛域实验室更适合处理需要同时明确公共授权、制度边界、身份与服务规则、证据层和长期监督的项目。我们优先服务具备明确机构责任和公共价值的合作。'
                 : 'CAL is best suited to projects where public mandate, institutional perimeter, identity and service rules, evidence layers and long-term oversight must be designed together. We prioritise engagements with clear institutional responsibility and public value.'}
             </p>
           </div>
@@ -140,7 +140,7 @@ const ContactPage: React.FC = () => {
           <div className="mb-12 max-w-3xl">
             <span className="section-eyebrow">{lang === 'zh' ? '资料准备' : 'Before Contacting CAL'}</span>
             <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
-              {lang === 'zh' ? '让第一次接洽直接进入制度问题' : 'Help the first conversation begin at the institutional level'}
+              {lang === 'zh' ? '让第一次接洽直接进入关键制度问题' : 'Help the first conversation begin at the institutional level'}
             </h2>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -160,7 +160,7 @@ const ContactPage: React.FC = () => {
           <div>
             <span className="section-eyebrow">{lang === 'zh' ? '接洽路径' : 'Engagement Pathway'}</span>
             <h2 className="mt-4 mb-10 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
-              {lang === 'zh' ? '从正式咨询到长期制度管护' : 'From formal enquiry to long-term institutional stewardship'}
+              {lang === 'zh' ? '从正式接洽到长期制度管护' : 'From formal enquiry to long-term institutional stewardship'}
             </h2>
             <div className="grid gap-5 md:grid-cols-2">
               {engagementPath.map((item) => (
@@ -175,7 +175,7 @@ const ContactPage: React.FC = () => {
           <div className="institution-panel self-start p-8">
             <ClipboardCheck className="mb-6 h-7 w-7 text-fcb-gold" strokeWidth={1.6} />
             <h3 className="mb-5 font-serif text-2xl text-white">
-              {lang === 'zh' ? '咨询类别' : c.contact.enquiryTitle}
+              {lang === 'zh' ? '接洽类别' : c.contact.enquiryTitle}
             </h3>
             <div className="space-y-4">
               {c.contact.enquiries.map((enquiry, index) => (
@@ -186,7 +186,7 @@ const ContactPage: React.FC = () => {
               ))}
             </div>
             <a href={`mailto:${CONTACT_EMAIL}`} className="primary-action mt-8 w-full">
-              <Mail size={14} /> {lang === 'zh' ? '发送正式咨询' : 'Send Institutional Enquiry'} <ArrowRight size={14} />
+              <Mail size={14} /> {lang === 'zh' ? '发送正式接洽' : 'Send Institutional Enquiry'} <ArrowRight size={14} />
             </a>
           </div>
         </div>

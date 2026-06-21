@@ -48,7 +48,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             {lang === 'zh' && (
               <span className="brand-lockup-cn" aria-hidden="true">
                 <span>赛域实验室</span>
-                <span>公共制度架构</span>
+                <span>制度设计与数字公共基础设施</span>
               </span>
             )}
           </Link>
@@ -168,7 +168,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             <p className="mt-4 text-[10px] uppercase tracking-[0.24em] text-fcb-gold">{c.footer.poweredBy}</p>
             <p className="mt-5 max-w-lg text-sm font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '围绕公共授权、可信身份、服务访问、证据记录与监督路径，设计面向长期运行的数字公共基础设施。'
+                ? '围绕公共授权、可信身份、服务访问、证据记录与监督路径，设计面向长期运行的制度基础设施。'
                 : 'Designing digital public infrastructure around public mandate, trusted identity, service access, evidence records and oversight pathways.'}
             </p>
             <div className="mt-7 flex flex-wrap gap-2">
