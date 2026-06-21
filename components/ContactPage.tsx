@@ -63,6 +63,11 @@ const ContactPage: React.FC = () => {
           'Powered by FCB',
         ];
 
+  const officialProtocol =
+    lang === 'zh'
+      ? ['公共授权', '责任主体', '证据路径', '监督机制']
+      : ['Public mandate', 'Accountable authority', 'Evidence pathway', 'Oversight mechanism'];
+
   return (
     <>
       <section className="px-6 pt-16 pb-16">
@@ -79,17 +84,30 @@ const ContactPage: React.FC = () => {
                 {c.ui.backToFcb} <ArrowUpRight size={14} />
               </a>
             </div>
+            <div className="contact-protocol mt-9 hidden sm:block">
+              <p className="contact-protocol-label">
+                {lang === 'zh' ? '正式接洽前置条件' : 'Official Intake Protocol'}
+              </p>
+              <div className="grid gap-2 sm:grid-cols-2">
+                {officialProtocol.map((item, index) => (
+                  <div key={item} className="contact-protocol-item">
+                    <span>{String(index + 1).padStart(2, '0')}</span>
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
           <div className="visual-frame min-h-[26rem] lg:min-h-[33rem]">
             <img
-              src="/visuals/cal/engagement-gateway-institutional.webp"
+              src="/visuals/cal/official-engagement-gateway-imagegen.webp"
               alt=""
               loading="lazy"
               decoding="async"
             />
-            <div className="absolute inset-x-5 bottom-5 z-10 grid gap-2 sm:grid-cols-2">
+            <div className="absolute inset-x-5 bottom-5 z-10 hidden gap-2 sm:grid sm:grid-cols-2">
               {trustSignals.slice(0, 4).map((signal) => (
-                <span key={signal} className="signal-chip bg-fcb-dark/70">{signal}</span>
+                <span key={signal} className="signal-chip contact-signal bg-fcb-dark/70">{signal}</span>
               ))}
             </div>
           </div>

@@ -433,12 +433,12 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      <section className="relative overflow-hidden px-6 py-28">
-        <div className="absolute inset-0 -z-10 opacity-35">
-          <img src="/visuals/cal/public-trust-network.webp" alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
+      <section className="closing-section relative overflow-hidden px-6 py-28">
+        <div className="closing-visual-layer absolute inset-0">
+          <img src="/visuals/cal/public-trust-continuum-imagegen.webp" alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
         </div>
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_10%,rgba(212,175,55,0.13),transparent_34%),linear-gradient(180deg,rgba(2,6,23,0.84),#020617_72%)]" />
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="closing-section-shade absolute inset-0" />
+        <div className="relative z-10 mx-auto max-w-4xl text-center">
           <span className="section-eyebrow justify-center">{c.closing.eyebrow}</span>
           <h2 className="mt-5 font-serif text-3xl tracking-tight text-white md:text-[2.7rem]">{c.closing.title}</h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg font-light leading-relaxed text-gray-300">{c.closing.body}</p>
@@ -449,6 +449,14 @@ const HomePage: React.FC = () => {
             <a href={`${FCB_URL}/`} target="_blank" rel="noreferrer" className="secondary-action">
               {c.closing.ctaSecondary} <ArrowUpRight size={14} />
             </a>
+          </div>
+          <div className="closing-trust-axis mt-12" aria-label={lang === 'zh' ? '可信公共系统轴线' : 'Trusted public system axis'}>
+            {systemPillars.map((pillar, index) => (
+              <div key={pillar} className="closing-trust-node">
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                {pillar}
+              </div>
+            ))}
           </div>
         </div>
       </section>
