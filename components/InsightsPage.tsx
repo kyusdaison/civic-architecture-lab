@@ -74,7 +74,7 @@ const InsightsPage: React.FC = () => {
           </div>
           <div className="visual-frame min-h-[23rem]">
             <img
-              src="/visuals/cal/research-standards-observatory.webp"
+              src="/visuals/cal/v3/research-standards-observatory-room.webp"
               alt=""
               loading="lazy"
               decoding="async"

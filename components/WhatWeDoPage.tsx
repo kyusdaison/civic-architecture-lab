@@ -72,7 +72,7 @@ const WhatWeDoPage: React.FC = () => {
             </div>
           </div>
           <div className="visual-frame min-h-[26rem] lg:min-h-[34rem]">
-            <img src="/visuals/cal/institutional-method-doctrine.webp" alt="" loading="lazy" decoding="async" />
+            <img src="/visuals/cal/v3/institutional-method-doctrine-hall.webp" alt="" loading="lazy" decoding="async" />
             <div className="absolute inset-x-5 bottom-5 z-10 grid gap-2 sm:grid-cols-2">
               {doctrineSequence.map((item) => (
                 <span key={item} className="signal-chip bg-fcb-dark/70">{item}</span>
@@ -144,7 +144,7 @@ const WhatWeDoPage: React.FC = () => {
       <section className="section-shell px-6 py-20">
         <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="visual-frame outcome-visual">
-            <img src="/visuals/cal/governance-public-value-ledger.webp" alt="" loading="lazy" decoding="async" />
+            <img src="/visuals/cal/v3/governance-public-value-ledger-room.webp" alt="" loading="lazy" decoding="async" />
           </div>
           <div>
             <span className="section-eyebrow">{c.govValue.eyebrow}</span>

@@ -59,7 +59,7 @@ const CapabilityDetailPage: React.FC = () => {
           </div>
           <div className="visual-frame min-h-[21rem]">
             <img
-              src="/visuals/cal/capability-operating-blueprint.webp"
+              src="/visuals/cal/v3/capability-operating-blueprint-atlas.webp"
               alt=""
               loading="lazy"
               decoding="async"

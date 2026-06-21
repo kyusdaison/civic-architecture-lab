@@ -283,7 +283,7 @@ const HomePage: React.FC = () => {
             </div>
           </div>
           <div className="visual-frame">
-            <img src="/visuals/cal/assurance-evidence-layer.webp" alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
+            <img src="/visuals/cal/v3/assurance-evidence-chamber.webp" alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
           </div>
         </div>
       </section>
@@ -384,7 +384,7 @@ const HomePage: React.FC = () => {
           </div>
           <div className="visual-frame">
             <img
-              src="/visuals/cal/engagement-stewardship-pathway.webp"
+              src="/visuals/cal/v3/engagement-stewardship-corridor.webp"
               alt=""
               loading="lazy"
               decoding="async"
@@ -399,7 +399,7 @@ const HomePage: React.FC = () => {
           <div className="grid items-center gap-14 lg:grid-cols-[1.04fr_0.96fr]">
             <div className="visual-frame outcome-visual order-2 lg:order-1">
               <img
-                src="/visuals/cal/governance-public-value-ledger.webp"
+                src="/visuals/cal/v3/governance-public-value-ledger-room.webp"
                 alt=""
                 loading="lazy"
                 decoding="async"

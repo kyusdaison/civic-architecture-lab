@@ -28,7 +28,7 @@ const CapabilitiesPage: React.FC = () => {
             </div>
           </div>
           <div className="visual-frame min-h-[18rem]">
-            <img src="/visuals/cal/capability-operating-blueprint.webp" alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
+            <img src="/visuals/cal/v3/capability-operating-blueprint-atlas.webp" alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
           </div>
         </div>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">

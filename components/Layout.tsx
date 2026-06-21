@@ -143,7 +143,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
       <footer className="relative overflow-hidden border-t border-white/10 bg-[#020b1d]">
         <img
-          src="/visuals/cal/institutional-system-compass.webp"
+          src="/visuals/cal/v3/institutional-system-compass-floor.webp"
           alt=""
           loading="lazy"
           decoding="async"

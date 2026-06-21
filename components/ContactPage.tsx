@@ -100,7 +100,7 @@ const ContactPage: React.FC = () => {
           </div>
           <div className="visual-frame min-h-[26rem] lg:min-h-[33rem]">
             <img
-              src="/visuals/cal/official-engagement-gateway-imagegen.webp"
+              src="/visuals/cal/v3/official-engagement-gateway-hall.webp"
               alt=""
               loading="lazy"
               decoding="async"
