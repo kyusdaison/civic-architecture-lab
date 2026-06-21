@@ -32,8 +32,12 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3">
           <Link to="/" className="block shrink-0 leading-tight" aria-label={c.brand.name} onClick={() => setMenuOpen(false)}>
             <img
-              src="/brand/cal-imagegen/cal-logo-header-reversed-v2.png"
+              src="/brand/cal-imagegen/cal-logo-header-reversed-v2-optimized.webp"
               alt={c.brand.name}
+              width={620}
+              height={215}
+              decoding="async"
+              fetchpriority="high"
               className="h-12 w-auto object-contain sm:h-14"
             />
           </Link>
@@ -141,8 +145,12 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           <div className="max-w-xl">
             <div className="flex items-center">
               <img
-                src="/brand/cal-imagegen/cal-logo-header-reversed-v2.png"
+                src="/brand/cal-imagegen/cal-logo-header-reversed-v2-optimized.webp"
                 alt={c.brand.name}
+                width={620}
+                height={215}
+                loading="lazy"
+                decoding="async"
                 className="h-16 w-auto"
               />
             </div>

@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { LanguageProvider } from './components/LanguageContext';
 import Layout from './components/Layout';
 import HomePage from './components/HomePage';
-import WhatWeDoPage from './components/WhatWeDoPage';
-import CapabilitiesPage from './components/CapabilitiesPage';
-import CapabilityDetailPage from './components/CapabilityDetailPage';
-import InsightsPage from './components/InsightsPage';
-import ContactPage from './components/ContactPage';
+
+const WhatWeDoPage = lazy(() => import('./components/WhatWeDoPage'));
+const CapabilitiesPage = lazy(() => import('./components/CapabilitiesPage'));
+const CapabilityDetailPage = lazy(() => import('./components/CapabilityDetailPage'));
+const InsightsPage = lazy(() => import('./components/InsightsPage'));
+const ContactPage = lazy(() => import('./components/ContactPage'));
 
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
@@ -17,19 +18,23 @@ const ScrollToTop: React.FC = () => {
   return null;
 };
 
+const RouteFallback: React.FC = () => <div className="min-h-[48vh]" aria-hidden="true" />;
+
 const App: React.FC = () => (
   <LanguageProvider>
     <ScrollToTop />
     <Layout>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/what-we-do" element={<WhatWeDoPage />} />
-        <Route path="/capabilities" element={<CapabilitiesPage />} />
-        <Route path="/capabilities/:slug" element={<CapabilityDetailPage />} />
-        <Route path="/insights" element={<InsightsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+      <Suspense fallback={<RouteFallback />}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/what-we-do" element={<WhatWeDoPage />} />
+          <Route path="/capabilities" element={<CapabilitiesPage />} />
+          <Route path="/capabilities/:slug" element={<CapabilityDetailPage />} />
+          <Route path="/insights" element={<InsightsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </Suspense>
     </Layout>
   </LanguageProvider>
 );
