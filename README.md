@@ -1,4 +1,4 @@
-# Civic Architecture Lab（公共制度架构实验室）
+# Civic Architecture Lab（赛域公共制度架构实验室）
 
 CAL — Institutional Design & Digital Public Infrastructure. Powered by Future Citizen Bureau.
 独立站点，中英双语（EN / 中文），技术栈 Vite + React + TypeScript + Tailwind，视觉沿用 FCB 的深色＋金制度风。
@@ -22,7 +22,7 @@ npm run preview    # 本地预览生产包
 - `/` 首页
 - `/what-we-do` 我们做什么（方法、公共价值、服务对象）
 - `/capabilities` 能力总览
-- `/capabilities/:slug` 能力详情（政府咨询 / 制度设计 / 数字公共基础设施 / 特殊辖区框架 / 数字居留模型 / 政策与监管框架）
+- `/capabilities/:slug` 能力详情（政府与机构设计顾问 / 制度设计 / 数字公共基础设施 / 特殊辖区框架 / 数字居留模型 / 政策与监管框架）
 - `/insights` 洞察（占位）
 - `/contact` 联系
 

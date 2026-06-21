@@ -123,7 +123,7 @@ const ContactPage: React.FC = () => {
             </h2>
             <p className="mt-6 text-base font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '赛域实验室更适合处理需要同时明确公共授权、制度边界、身份与服务规则、证据层和长期监督的项目。我们优先服务机构责任清晰、公共价值明确的合作。'
+                ? '赛域实验室更适合处理那些需要同时明确公共授权、制度边界、身份与服务规则、证据层和长期监督的项目。我们优先服务机构责任清晰、公共价值明确的合作。'
                 : 'CAL is best suited to projects where public mandate, institutional perimeter, identity and service rules, evidence layers and long-term oversight must be designed together. We prioritise engagements with clear institutional responsibility and public value.'}
             </p>
           </div>

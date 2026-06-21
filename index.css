@@ -45,11 +45,13 @@
 
 @layer components {
   .page-hero-title {
-    @apply font-serif text-[clamp(1.95rem,3.05vw,3.35rem)] font-normal leading-[1.14] text-white;
+    @apply font-serif text-[clamp(1.88rem,2.78vw,3.12rem)] font-normal leading-[1.16] text-white;
     letter-spacing: 0;
+    text-wrap: balance;
   }
   .page-hero-lede {
     @apply text-[15px] font-light leading-relaxed text-gray-300 md:text-base;
+    text-wrap: pretty;
   }
   .brand-lockup {
     display: inline-flex;
@@ -89,10 +91,12 @@
     letter-spacing: 0;
   }
   html:lang(zh-Hans) .page-hero-title {
-    line-height: 1.18;
+    font-size: clamp(1.78rem, 2.45vw, 2.95rem);
+    line-height: 1.23;
   }
   html:lang(zh-Hans) .page-hero-lede {
-    line-height: 1.86;
+    font-size: 0.98rem;
+    line-height: 1.9;
   }
   html:lang(zh-Hans) .section-eyebrow,
   html:lang(zh-Hans) .eyebrow-chip,
@@ -498,11 +502,15 @@
   .visual-frame {
     position: relative;
     overflow: hidden;
-    min-height: 24rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: clamp(21rem, 36vw, 30rem);
     border: 1px solid rgba(185, 151, 74, 0.28);
     border-radius: 6px;
     background: #020b1d;
     box-shadow: 0 32px 90px rgba(0, 0, 0, 0.36);
+    isolation: isolate;
   }
   .visual-frame > img {
     position: absolute;
@@ -510,6 +518,13 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+
+  @supports (content-visibility: auto) {
+    main > section:nth-of-type(n+3) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 760px;
+    }
   }
   .visual-frame::after {
     content: "";

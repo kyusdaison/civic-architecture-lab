@@ -15,7 +15,7 @@ const CapabilityDetailPage: React.FC = () => {
           '这项能力服务于哪一个公共授权或政策目标？',
           '哪个机构承担运行、监督与长期管护责任？',
           '身份、服务、证据和合规记录如何接受审阅？',
-          '如何避免项目变成一次性产品或短期包装？',
+          '如何避免项目变成一次性交付或短期包装？',
         ]
       : [
           'Which public mandate or policy objective does this capability serve?',
@@ -99,7 +99,7 @@ const CapabilityDetailPage: React.FC = () => {
             <div className="mb-5 flex items-center gap-3 text-fcb-gold">
               <ShieldCheck size={18} />
               <h2 className="font-serif text-lg text-white">
-                {lang === 'zh' ? '审查问题' : 'Assurance Questions'}
+                {lang === 'zh' ? '复核问题' : 'Assurance Questions'}
               </h2>
             </div>
             <div className="space-y-3">
@@ -117,7 +117,7 @@ const CapabilityDetailPage: React.FC = () => {
           <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
             <p className="max-w-2xl text-base font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '每项能力都可以独立启动，也可以组合成更完整的制度设计与数字公共基础设施项目。'
+                ? '每项能力都可以独立启动，也可以组合为更完整的制度设计与数字公共基础设施项目。'
                 : 'Each capability can begin as a focused engagement or combine into a broader institutional design and digital public infrastructure program.'}
             </p>
             <Link to="/contact" className="primary-action shrink-0">

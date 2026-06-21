@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
           { title: '公共授权', text: '先明确公共目的、法律边界与监督关系。', icon: Landmark },
           { title: '制度与治理', text: '把机构职责、问责关系与运行规则设计清楚。', icon: Scale },
           { title: '身份与准入', text: '建立资格、凭证、可信身份和服务访问规则。', icon: Fingerprint },
-          { title: '证据与记录', text: '让参与、服务与合规留下可审阅的制度记录。', icon: Database },
+          { title: '证据与记录', text: '让参与、服务与合规形成可审阅的制度记录。', icon: Database },
         ]
       : [
           { title: 'Public Mandate', text: 'Define legal perimeter, policy purpose and sovereign oversight first.', icon: Landmark },
@@ -46,9 +46,9 @@ const HomePage: React.FC = () => {
   const narrativePoints =
     lang === 'zh'
       ? [
-          { label: '不以产品堆叠开始', value: '先建立授权、规则与监督' },
-          { label: '不做短期试验', value: '以长期公共能力为目标' },
-          { label: '不使用私人移民叙事', value: '面向公共系统与可信参与' },
+          { label: '不是产品堆叠', value: '先建立授权、规则与监督' },
+          { label: '不是短期试验', value: '以长期公共能力为目标' },
+          { label: '不是私人移民叙事', value: '面向公共系统与可信参与' },
         ]
       : [
           { label: 'Not product stacking', value: 'Mandate, rules and oversight come first' },
@@ -60,8 +60,8 @@ const HomePage: React.FC = () => {
     lang === 'zh'
       ? [
           { title: '授权先于技术', text: '先确认公共目的、法律边界与责任主体，再讨论技术实现。' },
-          { title: '证据可以被审阅', text: '身份、服务、参与与合规记录应当形成可复核的证据层。' },
-          { title: '监督内建于设计', text: '监管、审计与治理不应后补，而应成为系统结构本身。' },
+          { title: '证据能够复核', text: '身份、服务、参与与合规记录应形成可审阅的证据层。' },
+          { title: '监督内建于设计', text: '监管、审计与治理不应事后补充，而应成为系统结构本身。' },
           { title: '公共责任保留', text: '关键数据、记录和规则始终处在辖区授权与公共监督之下。' },
         ]
       : [
@@ -73,7 +73,7 @@ const HomePage: React.FC = () => {
 
   const operatingSignals =
     lang === 'zh'
-      ? ['公共授权边界', '受治理的身份体系', '可审阅的记录', '服务访问规则', '监管与监督路径', '长期机构管护']
+      ? ['公共授权边界', '受治理的身份体系', '可审阅记录', '服务访问规则', '监管与监督路径', '长期机构管护']
       : [
           'Public mandate perimeter',
           'Governed identity',
@@ -99,7 +99,7 @@ const HomePage: React.FC = () => {
           {
             step: '03',
             title: '转化为治理型基础设施',
-            text: '把制度设计落实为可信身份、服务访问、记录证据和运行规则。',
+            text: '把制度设计落实为可信身份、服务访问、证据记录和运行规则。',
           },
           {
             step: '04',
@@ -132,7 +132,7 @@ const HomePage: React.FC = () => {
 
   const publicValueCommitments =
     lang === 'zh'
-      ? ['公共权力清晰可见', '服务访问更加顺畅', '关键记录可被复核', '系统增长保持可治理']
+      ? ['公共权责清晰可见', '服务访问更加顺畅', '关键记录可被复核', '系统增长保持可治理']
       : [
           'Authority remains clear',
           'Services become easier to access',
@@ -144,10 +144,12 @@ const HomePage: React.FC = () => {
     <>
       <section className="relative isolate min-h-[calc(84vh-5rem)] overflow-hidden px-6 py-20 md:py-24">
         <img
-          src="/visuals/cal/hero-institutional-infrastructure.webp"
+          src="/visuals/cal/v2/institutional-civic-hall-hero.webp"
           alt=""
           decoding="async"
-          className="absolute inset-0 -z-20 h-full w-full object-cover"
+          loading="eager"
+          fetchpriority="high"
+          className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
         />
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(2,6,23,0.96)_0%,rgba(2,6,23,0.82)_42%,rgba(2,6,23,0.55)_100%)]" />
         <div className="absolute inset-x-0 bottom-0 -z-10 h-48 bg-gradient-to-t from-fcb-dark to-transparent" />
@@ -218,7 +220,7 @@ const HomePage: React.FC = () => {
             </Link>
           </div>
           <div className="visual-frame">
-            <img src="/visuals/cal/institutional-operating-layers-imagegen.webp" alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
+            <img src="/visuals/cal/v2/governed-infrastructure-atlas.webp" alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
           </div>
         </div>
       </section>
@@ -367,7 +369,7 @@ const HomePage: React.FC = () => {
             </h2>
             <p className="mt-6 text-lg font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '赛域实验室不以一次性交付为中心，而是帮助公共机构把复杂愿景转化为可授权、可建设、可监督、可长期维护的制度基础设施。每一阶段都服务于同一目标：让系统在清晰公共责任之下稳定运行。'
+                ? '赛域实验室不以一次性交付为中心，而是帮助公共机构把复杂愿景转化为可授权、可建设、可监督、可长期维护的制度基础设施。每一阶段都服务于同一目标：让系统在清晰公共责任下稳定运行。'
                 : 'CAL is not organised around one-off deliverables. It helps public institutions translate complex ambitions into infrastructure that can be authorised, built, supervised and maintained. Each phase serves the same objective: systems that operate under public responsibility.'}
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -435,7 +437,7 @@ const HomePage: React.FC = () => {
 
       <section className="closing-section relative overflow-hidden px-6 py-28">
         <div className="closing-visual-layer absolute inset-0">
-          <img src="/visuals/cal/public-trust-continuum-imagegen.webp" alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
+          <img src="/visuals/cal/v2/public-trust-continuum-hall.webp" alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
         </div>
         <div className="closing-section-shade absolute inset-0" />
         <div className="relative z-10 mx-auto max-w-4xl text-center">

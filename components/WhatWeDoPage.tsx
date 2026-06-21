@@ -18,7 +18,7 @@ const WhatWeDoPage: React.FC = () => {
         { title: '授权先于方案', text: '先确认公共目的、法律边界和发起机构，再进入方案与技术层面的设计。', icon: Landmark },
         { title: '制度先于界面', text: '责任结构、服务规则和监督路径先成立，界面才有可信运行基础。', icon: Scale },
         { title: '证据先于规模', text: '身份、服务与记录需要先具备可审阅、可验证、可追责的证据基础。', icon: Database },
-        { title: '管护先于扩张', text: '长期治理、运行责任和公共信任机制，应当在规模化之前设计清楚。', icon: ShieldCheck },
+        { title: '管护先于扩张', text: '长期治理、运行责任和公共信任机制，应在规模化之前设计清楚。', icon: ShieldCheck },
       ]
     : [
         { title: 'Mandate before solution', text: 'Public purpose, legal perimeter and institutional sponsor are clarified before product or technology choices.', icon: Landmark },
