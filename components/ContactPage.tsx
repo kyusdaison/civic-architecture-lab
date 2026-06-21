@@ -39,7 +39,7 @@ const ContactPage: React.FC = () => {
   const engagementPath =
     lang === 'zh'
       ? [
-          { step: '01', title: '初步接洽', text: '确认机构背景、公共目的和是否属于 CAL 的制度设计范围。' },
+          { step: '01', title: '初步接洽', text: '确认机构背景、公共目的和是否属于思维客的制度设计范围。' },
           { step: '02', title: '授权与边界审阅', text: '梳理法律边界、发起机构、责任主体、监督路径和可执行范围。' },
           { step: '03', title: '制度架构工作', text: '形成身份、服务、证据、合规和运营模型的可审阅框架。' },
           { step: '04', title: '长期管护路径', text: '明确从试点到运行、从治理到扩展的机构责任与迭代机制。' },
@@ -123,7 +123,7 @@ const ContactPage: React.FC = () => {
             </h2>
             <p className="mt-6 text-base font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? 'CAL 更适合处理需要公共授权、制度边界、身份与服务规则、证据层和长期监督共同成立的项目。我们优先服务具有明确机构责任和公共价值的合作。'
+                ? '思维客更适合处理需要公共授权、制度边界、身份与服务规则、证据层和长期监督共同成立的项目。我们优先服务具有明确机构责任和公共价值的合作。'
                 : 'CAL is best suited to projects where public mandate, institutional perimeter, identity and service rules, evidence layers and long-term oversight must be designed together. We prioritise engagements with clear institutional responsibility and public value.'}
             </p>
           </div>
@@ -202,7 +202,7 @@ const ContactPage: React.FC = () => {
             </h2>
             <p className="mx-auto mt-6 max-w-3xl text-base font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '如果项目涉及公共授权、可信身份、数字公共基础设施、特殊辖区、政策监管或长期制度运营，请通过正式邮箱联系 CAL。'
+                ? '如果项目涉及公共授权、可信身份、数字公共基础设施、特殊辖区、政策监管或长期制度运营，请通过正式邮箱联系思维客。'
                 : 'If the matter concerns public mandate, trusted identity, digital public infrastructure, special jurisdictions, policy regulation or long-term institutional operations, contact CAL through the official enquiry channel.'}
             </p>
             <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">

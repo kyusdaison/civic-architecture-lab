@@ -91,7 +91,7 @@ const WhatWeDoPage: React.FC = () => {
             </h2>
             <p className="mt-6 text-base font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? 'CAL 的工作不是从功能清单开始，而是从公共授权、责任边界、证据链和运行托管开始。这样设计出来的系统，才有可能被政府、监管方、合作机构与公众长期信任。'
+                ? '思维客的工作不是从功能清单开始，而是从公共授权、责任边界、证据链和运行托管开始。这样设计出来的系统，才有可能被政府、监管方、合作机构与公众长期信任。'
                 : 'CAL does not begin with a feature list. It begins with public mandate, accountability boundaries, evidence chains and operating stewardship, so the resulting system can be trusted by governments, regulators, partners and the public over time.'}
             </p>
           </div>
