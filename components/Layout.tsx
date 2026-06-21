@@ -30,7 +30,12 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <div className="flex min-h-screen flex-col bg-fcb-dark font-sans text-gray-200">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-fcb-gold/25 bg-[#020b1d]/95 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3">
-          <Link to="/" className="block shrink-0 leading-tight" aria-label={c.brand.name} onClick={() => setMenuOpen(false)}>
+          <Link
+            to="/"
+            className="brand-lockup shrink-0 leading-tight"
+            aria-label={c.brand.name}
+            onClick={() => setMenuOpen(false)}
+          >
             <img
               src="/brand/cal-imagegen/cal-logo-header-reversed-v2-optimized.webp"
               alt={c.brand.name}
@@ -38,8 +43,14 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               height={215}
               decoding="async"
               fetchpriority="high"
-              className="h-12 w-auto object-contain sm:h-14"
+              className="brand-lockup-logo h-12 w-auto object-contain sm:h-14"
             />
+            {lang === 'zh' && (
+              <span className="brand-lockup-cn" aria-hidden="true">
+                <span>思维客</span>
+                <span>公共制度架构实验室</span>
+              </span>
+            )}
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex">
