@@ -100,7 +100,7 @@ const ContactPage: React.FC = () => {
         <div className="relative z-10 mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.7fr_1.3fr]">
           <div>
             <span className="section-eyebrow">{lang === 'zh' ? '接洽标准' : 'Engagement Standard'}</span>
-            <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-5xl">
+            <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
               {lang === 'zh' ? '适合正式启动合作的条件' : 'Best fit for formal institutional engagement'}
             </h2>
             <p className="mt-6 text-base font-light leading-relaxed text-gray-300">
@@ -121,7 +121,7 @@ const ContactPage: React.FC = () => {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 max-w-3xl">
             <span className="section-eyebrow">{lang === 'zh' ? '资料准备' : 'Before Contacting CAL'}</span>
-            <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-5xl">
+            <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
               {lang === 'zh' ? '让第一次接洽直接进入制度问题' : 'Help the first conversation begin at the institutional level'}
             </h2>
           </div>
@@ -141,7 +141,7 @@ const ContactPage: React.FC = () => {
         <div className="relative z-10 mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
             <span className="section-eyebrow">{lang === 'zh' ? '接洽路径' : 'Engagement Pathway'}</span>
-            <h2 className="mt-4 mb-10 font-serif text-3xl tracking-tight text-white md:text-5xl">
+            <h2 className="mt-4 mb-10 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
               {lang === 'zh' ? '从正式咨询到长期制度管护' : 'From formal enquiry to long-term institutional stewardship'}
             </h2>
             <div className="grid gap-5 md:grid-cols-2">
@@ -179,7 +179,7 @@ const ContactPage: React.FC = () => {
           <div className="institution-panel p-8 text-center md:p-12">
             <ShieldCheck className="mx-auto mb-7 h-8 w-8 text-fcb-gold" strokeWidth={1.6} />
             <span className="section-eyebrow justify-center">{lang === 'zh' ? '正式入口' : 'Official Gateway'}</span>
-            <h2 className="mx-auto mt-4 max-w-4xl font-serif text-3xl tracking-tight text-white md:text-5xl">
+            <h2 className="mx-auto mt-4 max-w-4xl font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
               {lang === 'zh' ? '为需要可信公共系统的政府与机构建立清晰起点' : 'A clear starting point for governments and institutions designing trusted public systems'}
             </h2>
             <p className="mx-auto mt-6 max-w-3xl text-base font-light leading-relaxed text-gray-300">

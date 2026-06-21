@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { useLang } from './LanguageContext';
 import { FCB_URL, CONTACT_EMAIL } from '../content';
+import InstitutionalSystemMap from './InstitutionalSystemMap';
 
 const CAP_ICONS = [Landmark, Building2, Network, Layers3, Globe, ScrollText];
 
@@ -141,7 +142,7 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <section className="relative isolate min-h-[calc(88vh-5rem)] overflow-hidden px-6 py-20 md:py-24">
+      <section className="relative isolate min-h-[calc(84vh-5rem)] overflow-hidden px-6 py-20 md:py-24">
         <img
           src="/visuals/cal/hero-institutional-infrastructure.webp"
           alt=""
@@ -192,7 +193,7 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      <section className="px-6 py-16">
+      <section className="relative z-10 -mt-16 px-6 pb-16 pt-0 md:-mt-24 lg:-mt-32">
         <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3">
           {narrativePoints.map((point) => (
             <div key={point.label} className="institution-card p-6">
@@ -207,7 +208,7 @@ const HomePage: React.FC = () => {
         <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <span className="section-eyebrow">{c.whatWeDo.eyebrow}</span>
-            <h2 className="mt-4 max-w-3xl font-serif text-4xl tracking-tight text-white md:text-5xl">{c.whatWeDo.title}</h2>
+            <h2 className="mt-4 max-w-3xl font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">{c.whatWeDo.title}</h2>
             <p className="mt-6 text-lg font-light leading-relaxed text-gray-300">{c.whatWeDo.body}</p>
             <p className="mt-7 border-l-2 border-fcb-gold/60 pl-5 text-base font-light italic leading-relaxed text-fcb-goldLight">
               {c.whatWeDo.not}
@@ -217,27 +218,28 @@ const HomePage: React.FC = () => {
             </Link>
           </div>
           <div className="visual-frame">
-            <img src="/visuals/cal/architecture-layers-diagram.webp" alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
+            <img src="/visuals/cal/institutional-operating-layers-imagegen.webp" alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
           </div>
         </div>
       </section>
 
       <section className="px-6 py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-12 grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+          <div className="mb-12 grid gap-10 lg:grid-cols-[0.74fr_1.26fr] lg:items-center">
             <div>
               <span className="section-eyebrow">
                 {lang === 'zh' ? '制度架构' : 'System Architecture'}
               </span>
-              <h2 className="mt-4 font-serif text-4xl tracking-tight text-white md:text-5xl">
+              <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
                 {lang === 'zh' ? '从公共授权到可信运行层' : 'From Public Mandate to Trusted Operating Layers'}
               </h2>
+              <p className="mt-6 text-base font-light leading-relaxed text-gray-300">
+                {lang === 'zh'
+                  ? '清晰的制度架构能让政府、机构、合作方与公众理解一个系统如何被授权、如何运行、如何留下证据，并由谁长期负责。'
+                  : 'A clear institutional architecture lets governments, partners and the public understand how a system is authorised, how it operates, what evidence it leaves and who remains responsible over time.'}
+              </p>
             </div>
-            <p className="text-lg font-light leading-relaxed text-gray-300">
-              {lang === 'zh'
-                ? 'CAL 的工作不是从界面或软件开始，而是先把公共系统的制度基础搭起来：谁授权、谁负责、谁可以参与、哪些服务可访问、什么记录可审阅，以及如何长期监督。'
-                : 'CAL does not begin with interfaces or software. It begins by defining the institutional base of a public system: who authorises it, who is accountable, who may participate, which services can be accessed, what records are reviewable, and how oversight is maintained.'}
-            </p>
+            <InstitutionalSystemMap lang={lang} />
           </div>
 
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -261,7 +263,7 @@ const HomePage: React.FC = () => {
         <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.02fr_0.98fr]">
           <div>
             <span className="section-eyebrow">{lang === 'zh' ? '可信基础设施' : 'Trust Assurance'}</span>
-            <h2 className="mt-4 font-serif text-4xl tracking-tight text-white md:text-5xl">
+            <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
               {lang === 'zh' ? '让公共系统能够被授权、被使用、被审阅' : 'So Public Systems Can Be Authorised, Used and Reviewed'}
             </h2>
             <p className="mt-6 text-lg font-light leading-relaxed text-gray-300">
@@ -306,7 +308,7 @@ const HomePage: React.FC = () => {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 max-w-3xl">
             <span className="section-eyebrow">{c.capabilities.eyebrow}</span>
-            <h2 className="mt-4 font-serif text-4xl tracking-tight text-white md:text-5xl">{c.capabilities.title}</h2>
+            <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">{c.capabilities.title}</h2>
             <p className="mt-5 text-lg font-light leading-relaxed text-gray-300">{c.capabilities.intro}</p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -336,7 +338,7 @@ const HomePage: React.FC = () => {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12">
             <span className="section-eyebrow">{c.approach.eyebrow}</span>
-            <h2 className="mt-4 font-serif text-4xl tracking-tight text-white md:text-5xl">{c.approach.title}</h2>
+            <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">{c.approach.title}</h2>
           </div>
           <div className="grid gap-6 lg:grid-cols-4">
             {c.approach.steps.map((s, i) => (
@@ -358,7 +360,7 @@ const HomePage: React.FC = () => {
             <span className="section-eyebrow">
               {lang === 'zh' ? '合作路径' : 'Engagement Pathway'}
             </span>
-            <h2 className="mt-4 font-serif text-4xl tracking-tight text-white md:text-5xl">
+            <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
               {lang === 'zh'
                 ? '从最初授权到长期管护'
                 : 'From First Mandate to Long-Term Stewardship'}
@@ -404,7 +406,7 @@ const HomePage: React.FC = () => {
             </div>
             <div className="order-1 lg:order-2">
               <span className="section-eyebrow">{c.govValue.eyebrow}</span>
-              <h2 className="mt-4 font-serif text-4xl tracking-tight text-white md:text-5xl">{c.govValue.title}</h2>
+              <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">{c.govValue.title}</h2>
               <p className="mt-6 text-lg font-light leading-relaxed text-gray-300">{c.govValue.body}</p>
             </div>
           </div>
@@ -438,7 +440,7 @@ const HomePage: React.FC = () => {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_10%,rgba(212,175,55,0.13),transparent_34%),linear-gradient(180deg,rgba(2,6,23,0.84),#020617_72%)]" />
         <div className="mx-auto max-w-4xl text-center">
           <span className="section-eyebrow justify-center">{c.closing.eyebrow}</span>
-          <h2 className="mt-5 font-serif text-4xl tracking-tight text-white md:text-6xl">{c.closing.title}</h2>
+          <h2 className="mt-5 font-serif text-3xl tracking-tight text-white md:text-[2.7rem]">{c.closing.title}</h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg font-light leading-relaxed text-gray-300">{c.closing.body}</p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link to="/contact" className="primary-action">

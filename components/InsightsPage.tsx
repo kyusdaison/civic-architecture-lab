@@ -91,7 +91,7 @@ const InsightsPage: React.FC = () => {
               <span className="section-eyebrow">
                 {lang === 'zh' ? '研究议程' : 'Research Agenda'}
               </span>
-              <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-5xl">
+              <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
                 {lang === 'zh' ? '把复杂制度问题转化为可执行标准' : 'Turning Complex Institutional Questions into Executable Standards'}
               </h2>
             </div>

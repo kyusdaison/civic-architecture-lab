@@ -86,7 +86,7 @@ const WhatWeDoPage: React.FC = () => {
         <div className="relative z-10 mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.68fr_1.32fr]">
           <div>
             <span className="section-eyebrow">{lang === 'zh' ? '方法论' : 'Doctrine'}</span>
-            <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-5xl">
+            <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
               {lang === 'zh' ? '把复杂公共系统变成可治理的制度架构' : 'Turning complex public systems into governable institutional architecture'}
             </h2>
             <p className="mt-6 text-base font-light leading-relaxed text-gray-300">
@@ -111,7 +111,7 @@ const WhatWeDoPage: React.FC = () => {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 max-w-3xl">
             <span className="section-eyebrow">{c.approach.eyebrow}</span>
-            <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-5xl">{c.approach.title}</h2>
+            <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">{c.approach.title}</h2>
           </div>
           <div className="grid gap-8 lg:grid-cols-[1.3fr_0.7fr]">
             <div className="grid gap-5 md:grid-cols-2">
@@ -148,7 +148,7 @@ const WhatWeDoPage: React.FC = () => {
           </div>
           <div>
             <span className="section-eyebrow">{c.govValue.eyebrow}</span>
-            <h2 className="mt-4 mb-5 font-serif text-3xl tracking-tight text-white md:text-5xl">{c.govValue.title}</h2>
+            <h2 className="mt-4 mb-5 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">{c.govValue.title}</h2>
             <p className="mb-8 text-base font-light leading-relaxed text-gray-300">{c.govValue.body}</p>
             <div className="grid gap-4 sm:grid-cols-2">
               {c.govValue.points.map((p) => (
@@ -167,7 +167,7 @@ const WhatWeDoPage: React.FC = () => {
           <div className="institution-panel p-8 md:p-12">
             <div className="mx-auto max-w-4xl text-center">
               <span className="section-eyebrow justify-center">{c.audience.eyebrow}</span>
-              <h2 className="mt-4 mb-5 font-serif text-3xl tracking-tight text-white md:text-5xl">{c.audience.title}</h2>
+              <h2 className="mt-4 mb-5 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">{c.audience.title}</h2>
               <p className="mx-auto mb-10 max-w-3xl text-base font-light leading-relaxed text-gray-300">{audienceFrame}</p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

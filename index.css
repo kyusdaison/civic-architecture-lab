@@ -42,7 +42,7 @@
 
 @layer components {
   .page-hero-title {
-    @apply font-serif text-[clamp(2rem,3.65vw,3.85rem)] font-normal leading-[1.12] text-white;
+    @apply font-serif text-[clamp(1.95rem,3.05vw,3.35rem)] font-normal leading-[1.14] text-white;
     letter-spacing: 0;
   }
   .page-hero-lede {
@@ -78,11 +78,13 @@
       inset 0 1px 0 rgba(255, 255, 255, 0.06),
       0 22px 60px rgba(0, 0, 0, 0.22);
     backdrop-filter: blur(18px);
-    transition: border-color 160ms ease, transform 160ms ease, background 160ms ease;
+    transition: border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
   }
   .institution-card:hover {
     border-color: rgba(212, 175, 55, 0.24);
-    transform: translateY(-2px);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.07),
+      0 24px 66px rgba(0, 0, 0, 0.26);
   }
   .assurance-tile {
     position: relative;
@@ -207,6 +209,133 @@
     font-size: 0.88rem;
     font-weight: 300;
     line-height: 1.5;
+  }
+  .system-map {
+    position: relative;
+    overflow: hidden;
+    min-height: 33rem;
+    border: 1px solid rgba(185, 151, 74, 0.28);
+    border-radius: 6px;
+    background:
+      radial-gradient(circle at 50% 18%, rgba(229, 193, 88, 0.12), transparent 28%),
+      radial-gradient(circle at 18% 82%, rgba(185, 214, 231, 0.08), transparent 30%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.014)),
+      #020817;
+    padding: 1.35rem;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.07),
+      0 30px 90px rgba(0, 0, 0, 0.32);
+  }
+  .system-map::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      linear-gradient(90deg, rgba(229, 193, 88, 0.1), transparent 22%, transparent 78%, rgba(229, 193, 88, 0.08)),
+      radial-gradient(circle at 50% 50%, rgba(247, 243, 234, 0.045), transparent 36%);
+  }
+  .system-map-grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.32;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .system-map-lines {
+    position: absolute;
+    inset: 6.2rem 1.4rem 4.4rem;
+    height: auto;
+    width: calc(100% - 2.8rem);
+    color: rgba(229, 193, 88, 0.72);
+  }
+  .system-map-lines path,
+  .system-map-lines circle {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.1;
+    vector-effect: non-scaling-stroke;
+  }
+  .system-map-lines circle {
+    fill: rgba(2, 8, 23, 0.78);
+  }
+  .system-map-body {
+    position: relative;
+    min-height: 19rem;
+  }
+  .system-map-core,
+  .system-map-layer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(229, 193, 88, 0.3);
+    background:
+      linear-gradient(180deg, rgba(2, 11, 29, 0.85), rgba(2, 6, 23, 0.66)),
+      linear-gradient(135deg, rgba(229, 193, 88, 0.12), transparent 54%);
+    color: #f7f3ea;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(16px);
+  }
+  .system-map-core {
+    left: 50%;
+    top: 0;
+    min-height: 4.9rem;
+    width: min(14rem, 72%);
+    transform: translateX(-50%);
+    justify-content: center;
+    gap: 0.8rem;
+    color: #e5c158;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .system-map-layer {
+    width: min(16.2rem, 44%);
+    min-height: 5.8rem;
+    gap: 0.75rem;
+    padding: 0.9rem;
+  }
+  .system-map-layer > div {
+    min-width: 0;
+  }
+  .system-map-layer strong {
+    display: block;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+  .system-map-layer span {
+    display: block;
+    margin-top: 0.18rem;
+    color: #aeb7c6;
+    font-size: 0.72rem;
+    font-weight: 300;
+    line-height: 1.3;
+  }
+  .system-map-layer svg {
+    flex: 0 0 auto;
+    color: #e5c158;
+  }
+  .layer-a {
+    left: 0;
+    top: 6.8rem;
+  }
+  .layer-b {
+    right: 0;
+    top: 6.8rem;
+  }
+  .layer-c {
+    left: 0;
+    bottom: 0;
+  }
+  .layer-d {
+    right: 0;
+    bottom: 0;
   }
   .capability-dossier {
     display: grid;
@@ -389,6 +518,33 @@
   }
   .standard-row {
     grid-template-columns: 1.8rem 1fr;
+  }
+  .system-map {
+    min-height: auto;
+    padding: 1rem;
+  }
+  .system-map-lines {
+    display: none;
+  }
+  .system-map-body {
+    display: grid;
+    min-height: auto;
+    gap: 0.75rem;
+  }
+  .system-map-core,
+  .system-map-layer {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    min-height: 4.4rem;
+    transform: none;
+  }
+  .system-map-core {
+    justify-content: flex-start;
+    padding: 0.9rem;
+  }
+  .system-map-layer {
+    align-items: flex-start;
   }
   .dossier-token {
     text-transform: none;
