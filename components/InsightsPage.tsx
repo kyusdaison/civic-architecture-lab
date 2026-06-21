@@ -97,7 +97,7 @@ const InsightsPage: React.FC = () => {
             </div>
             <p className="text-lg font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '思维客的研究不是为了制造概念，而是为了帮助公共机构判断一个系统是否能够被授权、被建设、被监督，并在长期运行中保持公共价值。'
+                ? '赛域实验室的研究不是为了制造概念，而是为了帮助公共机构判断一个系统是否能够被授权、被建设、被监督，并在长期运行中保持公共价值。'
                 : 'CAL research is not built around abstract commentary. It helps public institutions decide whether a system can be authorised, built, supervised and maintained as public value over time.'}
             </p>
           </div>

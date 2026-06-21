@@ -268,7 +268,7 @@ const HomePage: React.FC = () => {
             </h2>
             <p className="mt-6 text-lg font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '一个可信公共系统不只需要漂亮的界面，也需要可解释的授权、可追溯的证据、可执行的服务规则和长期监督能力。思维客将这些要求前置为系统架构本身。'
+                ? '一个可信公共系统不只需要漂亮的界面，也需要可解释的授权、可追溯的证据、可执行的服务规则和长期监督能力。赛域实验室将这些要求前置为系统架构本身。'
                 : 'A trusted public system needs more than a polished interface. It requires explainable mandate, traceable evidence, enforceable service rules and durable oversight. CAL treats these requirements as the architecture itself.'}
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -367,7 +367,7 @@ const HomePage: React.FC = () => {
             </h2>
             <p className="mt-6 text-lg font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '思维客的合作方式不是一次性交付材料，而是帮助公共机构把复杂愿景转化为可授权、可建设、可监督、可长期维护的制度基础设施。每一阶段都服务于同一个目标：让系统在公共责任之下稳定运行。'
+                ? '赛域实验室的合作方式不是一次性交付材料，而是帮助公共机构把复杂愿景转化为可授权、可建设、可监督、可长期维护的制度基础设施。每一阶段都服务于同一个目标：让系统在公共责任之下稳定运行。'
                 : 'CAL is not organised around one-off deliverables. It helps public institutions translate complex ambitions into infrastructure that can be authorised, built, supervised and maintained. Each phase serves the same objective: systems that operate under public responsibility.'}
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">

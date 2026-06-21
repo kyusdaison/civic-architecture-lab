@@ -47,8 +47,8 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             />
             {lang === 'zh' && (
               <span className="brand-lockup-cn" aria-hidden="true">
-                <span>思维客</span>
-                <span>公共制度架构实验室</span>
+                <span>赛域实验室</span>
+                <span>公共制度架构</span>
               </span>
             )}
           </Link>

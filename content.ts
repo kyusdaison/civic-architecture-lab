@@ -176,7 +176,7 @@ export const CONTENT: Record<Lang, CalContent> = {
     footer: { poweredBy: 'Civic Architecture Lab — Powered by Future Citizen Bureau', ecosystem: 'FCB Ecosystem', rights: 'Civic Architecture Lab' },
   },
   zh: {
-    brand: { name: '思维客公共制度架构实验室', tagline: '制度设计与数字公共基础设施', poweredBy: '由未来公民署支持' },
+    brand: { name: '赛域公共制度架构实验室', tagline: '制度设计与数字公共基础设施', poweredBy: '由未来公民署支持' },
     nav: [
       { label: '首页', to: '/' },
       { label: '我们做什么', to: '/what-we-do' },
@@ -198,19 +198,19 @@ export const CONTENT: Record<Lang, CalContent> = {
       kicker: '由未来公民署支持',
       title: '设计未来公共系统的',
       titleAccent: '制度架构',
-      body: '思维客公共制度架构实验室是由未来公民署支持的制度设计能力。它与政府、公共机构和特殊辖区合作，设计数字公共基础设施、可信身份系统，以及面向未来的公民制度。',
+      body: '赛域公共制度架构实验室是由未来公民署支持的制度设计能力。它与政府、公共机构和特殊辖区合作，设计数字公共基础设施、可信身份系统，以及面向未来的公民制度。',
       ctaPrimary: '政府与机构咨询',
       ctaSecondary: '查看能力',
     },
     whatWeDo: {
       eyebrow: '我们是什么',
       title: '一个制度设计实验室——而非普通咨询公司',
-      body: '思维客设计可信公共系统背后的制度、框架与数字公共基础设施。我们工作在技术的上游——界定授权、身份、服务、证据与监督——使最终建成的系统合法、可问责且持久。',
+      body: '赛域实验室设计可信公共系统背后的制度、框架与数字公共基础设施。我们工作在技术的上游——界定授权、身份、服务、证据与监督——使最终建成的系统合法、可问责且持久。',
       not: '不是软件供应商，不是普通咨询公司。它是一个制度设计与数字公共基础设施平台。',
     },
     capabilities: {
       eyebrow: '能力',
-      title: '思维客设计什么',
+      title: '赛域实验室设计什么',
       intro: '六项能力，一套制度方法——从授权与政策，到可信的数字公共基础设施。',
       items: [
         {
@@ -276,7 +276,7 @@ export const CONTENT: Record<Lang, CalContent> = {
     govValue: {
       eyebrow: '公共价值',
       title: '为公共系统建设能力，而非投机',
-      body: '思维客帮助辖区建设持久的公共系统能力。价值来自更好的制度与服务——可持续的参与模型、更低的行政摩擦与更强的监督——而非投机性回报。',
+      body: '赛域实验室帮助辖区建设持久的公共系统能力。价值来自更好的制度与服务——可持续的参与模型、更低的行政摩擦与更强的监督——而非投机性回报。',
       points: [
         { title: '行政现代化', text: '通过结构化的数字系统降低摩擦、实现公共行政现代化。' },
         { title: '可持续参与模型', text: '设计合法的参与与服务模型，使其能在传统税收之外支持公共收入。' },
@@ -298,17 +298,17 @@ export const CONTENT: Record<Lang, CalContent> = {
     contact: {
       eyebrow: '联系',
       title: '政府与机构咨询',
-      body: '思维客公共制度架构实验室与政府、公共机构和特殊辖区合作。制度设计与数字公共基础设施相关合作，欢迎联系。',
+      body: '赛域公共制度架构实验室与政府、公共机构和特殊辖区合作。制度设计与数字公共基础设施相关合作，欢迎联系。',
       enquiryTitle: '咨询类别',
       enquiries: ['政府与机构', '特殊辖区项目', '数字公共基础设施', '政策与监管设计', '媒体与综合'],
     },
     closing: {
-      eyebrow: '与思维客合作',
+      eyebrow: '与赛域实验室合作',
       title: '共同设计可信的公共系统',
-      body: '思维客公共制度架构实验室与政府、公共机构和特殊辖区合作，设计未来公共系统的制度架构。',
+      body: '赛域公共制度架构实验室与政府、公共机构和特殊辖区合作，设计未来公共系统的制度架构。',
       ctaPrimary: '政府与机构咨询',
       ctaSecondary: '返回 FCB 生态',
     },
-    footer: { poweredBy: '思维客公共制度架构实验室 —— 由未来公民署支持', ecosystem: 'FCB 生态', rights: '思维客公共制度架构实验室' },
+    footer: { poweredBy: '赛域公共制度架构实验室 —— 由未来公民署支持', ecosystem: 'FCB 生态', rights: '赛域公共制度架构实验室' },
   },
 };
