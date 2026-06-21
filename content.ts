@@ -156,7 +156,7 @@ export const CONTENT: Record<Lang, CalContent> = {
     insights: {
       eyebrow: 'Insights',
       title: 'Research on Future Public Systems',
-      body: 'Analysis on institutional design, digital public infrastructure, special jurisdictions and trusted public systems. The full library is coming soon.',
+      body: 'Analysis, working notes and standards thinking on institutional design, digital public infrastructure, special jurisdictions and trusted public systems.',
       topics: ['Institutional design', 'Digital public infrastructure', 'Special jurisdictions', 'Trusted identity', 'Policy & regulation', 'Digital residency'],
     },
     contact: {
@@ -292,7 +292,7 @@ export const CONTENT: Record<Lang, CalContent> = {
     insights: {
       eyebrow: '洞察',
       title: '关于未来公共系统的研究',
-      body: '围绕制度设计、数字公共基础设施、特殊辖区与可信公共系统的分析。完整文库即将上线。',
+      body: '围绕制度设计、数字公共基础设施、特殊辖区与可信公共系统，持续发布分析、工作笔记与标准方法论。',
       topics: ['制度设计', '数字公共基础设施', '特殊辖区', '可信身份', '政策与监管', '数字居留'],
     },
     contact: {

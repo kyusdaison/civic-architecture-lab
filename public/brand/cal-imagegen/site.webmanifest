@@ -1,0 +1,21 @@
+{
+  "name": "Civic Architecture Lab",
+  "short_name": "CAL",
+  "description": "Institutional design and digital public infrastructure powered by Future Citizen Bureau.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#061426",
+  "theme_color": "#061426",
+  "icons": [
+    {
+      "src": "/brand/cal-imagegen/cal-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/brand/cal-imagegen/cal-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
