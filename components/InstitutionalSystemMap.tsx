@@ -14,11 +14,11 @@ const InstitutionalSystemMap: React.FC<InstitutionalSystemMapProps> = ({ lang, c
           eyebrow: '制度运行图',
           title: '可信公共系统的运行层',
           core: '公共授权',
-          footer: '从授权到服务，从证据到监督，形成能够被长期管护的制度基础设施。',
+          footer: '让授权、服务、证据与监督彼此对齐，形成能够被长期管护的制度基础设施。',
           layers: [
             { title: '身份', text: '资格、凭证与参与边界', icon: Fingerprint },
             { title: '服务', text: '访问规则与公共服务入口', icon: Network },
-            { title: '证据', text: '记录、审查与可追溯性', icon: Database },
+            { title: '证据', text: '记录、审阅与可追溯性', icon: Database },
             { title: '监督', text: '合规、监管与问责路径', icon: ShieldCheck },
           ],
         }

@@ -16,12 +16,12 @@ const InsightsPage: React.FC = () => {
           },
           {
             title: '数字公共基础设施标准',
-            text: '梳理身份、服务访问、证据记录、互操作性与数据责任的设计标准。',
+            text: '梳理身份、服务访问、证据记录、互操作性和数据责任的设计标准。',
             icon: Database,
           },
           {
-            title: '政策与监管方法论',
-            text: '将合规、监管访问、监督路径和公共价值转化为可被执行的系统要求。',
+            title: '政策与监管方法',
+            text: '将合规、监管访问、监督路径和公共价值转化为可执行的系统要求。',
             icon: Scale,
           },
         ]
@@ -47,9 +47,9 @@ const InsightsPage: React.FC = () => {
     lang === 'zh'
       ? [
           '这个系统的公共授权是否清晰？',
-          '身份、服务与证据是否能够被审阅？',
-          '监管、监督与主权责任是否内建？',
-          '参与模型是否服务公共价值而非投机叙事？',
+          '身份、服务与证据是否可被审阅？',
+          '监管、监督与公共责任是否内建？',
+          '参与模型是否真正服务公共价值？',
         ]
       : [
           'Is the public mandate clear?',
@@ -128,12 +128,12 @@ const InsightsPage: React.FC = () => {
             <div className="mb-6 flex items-center gap-3 text-fcb-gold">
               <BookOpen size={18} />
               <h2 className="font-serif text-xl text-white">
-                {lang === 'zh' ? '标准工作层' : 'Standards Workbench'}
+                {lang === 'zh' ? '标准判断框架' : 'Standards Workbench'}
               </h2>
             </div>
             <p className="mb-7 text-base font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '每一项研究主题最终都要回到同一个判断：公共系统能否被清晰授权、稳定运行、有效监督，并在跨机构协作中保持可信。'
+                ? '每一项研究主题最终都回到同一个判断：公共系统能否被清晰授权、稳定运行、有效监督，并在跨机构协作中保持可信。'
                 : 'Every research theme returns to one test: whether a public system can be clearly authorised, operated with stability, supervised effectively and trusted across institutions.'}
             </p>
             <div className="space-y-3">
@@ -154,7 +154,7 @@ const InsightsPage: React.FC = () => {
               </h3>
               <p className="text-sm font-light leading-relaxed text-gray-400">
                 {lang === 'zh'
-                  ? '定义哪些身份、服务、记录和权限可以进入公共系统，并由谁负责。'
+                  ? '定义哪些身份、服务、记录和权限可以进入公共系统，并明确责任主体。'
                   : 'Define which identities, services, records and authorities may enter a public system, and who is responsible.'}
               </p>
             </div>
@@ -177,7 +177,7 @@ const InsightsPage: React.FC = () => {
                   </h3>
                   <p className="text-sm font-light leading-relaxed text-gray-400">
                     {lang === 'zh'
-                      ? '研究议题可以转化为政策框架、监管路径、制度设计或数字公共基础设施项目。'
+                      ? '研究议题可以进一步转化为政策框架、监管路径、制度设计或数字公共基础设施项目。'
                       : 'Research topics can become policy frameworks, regulatory pathways, institutional design or digital public infrastructure programs.'}
                   </p>
                 </div>

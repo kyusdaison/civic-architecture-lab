@@ -31,10 +31,10 @@ const HomePage: React.FC = () => {
   const architectureLayers =
     lang === 'zh'
       ? [
-          { title: '公共授权', text: '先界定法律边界、政策目标与公共监督。', icon: Landmark },
-          { title: '制度与治理', text: '明确机构职责、问责关系与运行规则。', icon: Scale },
-          { title: '身份与准入', text: '建立可信身份、资格、凭证与服务访问。', icon: Fingerprint },
-          { title: '证据与记录', text: '让参与、服务与合规形成可审阅的证据层。', icon: Database },
+          { title: '公共授权', text: '先明确公共目的、法律边界与监督关系。', icon: Landmark },
+          { title: '制度与治理', text: '把机构职责、问责关系与运行规则设计清楚。', icon: Scale },
+          { title: '身份与准入', text: '建立资格、凭证、可信身份和服务访问规则。', icon: Fingerprint },
+          { title: '证据与记录', text: '让参与、服务与合规留下可审阅的制度记录。', icon: Database },
         ]
       : [
           { title: 'Public Mandate', text: 'Define legal perimeter, policy purpose and sovereign oversight first.', icon: Landmark },
@@ -46,9 +46,9 @@ const HomePage: React.FC = () => {
   const narrativePoints =
     lang === 'zh'
       ? [
-          { label: '不是产品堆叠', value: '从授权、规则和监督开始' },
-          { label: '不是短期试验', value: '为长期公共能力而设计' },
-          { label: '不是私人移民叙事', value: '服务于公共系统与可信参与' },
+          { label: '不以产品堆叠开始', value: '先建立授权、规则与监督' },
+          { label: '不做短期试验', value: '以长期公共能力为目标' },
+          { label: '不使用私人移民叙事', value: '面向公共系统与可信参与' },
         ]
       : [
           { label: 'Not product stacking', value: 'Mandate, rules and oversight come first' },
@@ -59,10 +59,10 @@ const HomePage: React.FC = () => {
   const assurancePrinciples =
     lang === 'zh'
       ? [
-          { title: '授权先于技术', text: '每个系统都应先有清晰的公共目的、法律边界与责任主体。' },
-          { title: '证据可以被审阅', text: '身份、服务、参与和合规记录必须形成可复核的证据层。' },
-          { title: '监督内建于设计', text: '监管、审计和治理不是后补功能，而是架构的一部分。' },
-          { title: '公共责任保留', text: '关键数据、记录和规则保持在辖区授权与公共监督之下。' },
+          { title: '授权先于技术', text: '先确认公共目的、法律边界与责任主体，再讨论技术实现。' },
+          { title: '证据可以被审阅', text: '身份、服务、参与与合规记录应当形成可复核的证据层。' },
+          { title: '监督内建于设计', text: '监管、审计与治理不应后补，而应成为系统结构本身。' },
+          { title: '公共责任保留', text: '关键数据、记录和规则始终处在辖区授权与公共监督之下。' },
         ]
       : [
           { title: 'Mandate Before Technology', text: 'Every system begins with a clear public purpose, legal perimeter and accountable authority.' },
@@ -73,7 +73,7 @@ const HomePage: React.FC = () => {
 
   const operatingSignals =
     lang === 'zh'
-      ? ['公共授权边界', '受治理身份', '可审阅记录', '服务访问规则', '监管与监督路径', '长期机构管护']
+      ? ['公共授权边界', '受治理的身份体系', '可审阅的记录', '服务访问规则', '监管与监督路径', '长期机构管护']
       : [
           'Public mandate perimeter',
           'Governed identity',
@@ -89,7 +89,7 @@ const HomePage: React.FC = () => {
           {
             step: '01',
             title: '确认授权与目标',
-            text: '明确公共目的、法律边界、发起机构和可执行范围，避免项目从工具或营销叙事开始。',
+            text: '确认公共目的、法律边界、发起机构和可执行范围，避免项目从工具或营销叙事开始。',
           },
           {
             step: '02',
@@ -98,13 +98,13 @@ const HomePage: React.FC = () => {
           },
           {
             step: '03',
-            title: '转化为受治理基础设施',
-            text: '支持团队把制度设计转化为可信身份、服务访问、记录证据和运营规则。',
+            title: '转化为治理型基础设施',
+            text: '把制度设计落实为可信身份、服务访问、记录证据和运行规则。',
           },
           {
             step: '04',
-            title: '长期管护与迭代',
-            text: '在运行、监督和扩展阶段保持制度一致性、公共价值和主权责任。',
+            title: '长期管护与复核',
+            text: '在运行、监督和扩展阶段保持制度一致性、公共价值和辖区责任。',
           },
         ]
       : [
@@ -132,7 +132,7 @@ const HomePage: React.FC = () => {
 
   const publicValueCommitments =
     lang === 'zh'
-      ? ['公共权力保持清晰', '服务更容易被访问', '记录可以被复核', '增长始终可治理']
+      ? ['公共权力清晰可见', '服务访问更加顺畅', '关键记录可被复核', '系统增长保持可治理']
       : [
           'Authority remains clear',
           'Services become easier to access',
@@ -231,11 +231,11 @@ const HomePage: React.FC = () => {
                 {lang === 'zh' ? '制度架构' : 'System Architecture'}
               </span>
               <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
-                {lang === 'zh' ? '从公共授权到可信运行层' : 'From Public Mandate to Trusted Operating Layers'}
+                {lang === 'zh' ? '从公共授权走向可信运行' : 'From Public Mandate to Trusted Operating Layers'}
               </h2>
               <p className="mt-6 text-base font-light leading-relaxed text-gray-300">
                 {lang === 'zh'
-                  ? '清晰的制度架构能让政府、机构、合作方与公众理解一个系统如何被授权、如何运行、如何留下证据，并由谁长期负责。'
+                  ? '清晰的制度架构能让政府、机构、合作方与公众理解：系统如何被授权、如何运行、留下哪些证据，以及由谁长期负责。'
                   : 'A clear institutional architecture lets governments, partners and the public understand how a system is authorised, how it operates, what evidence it leaves and who remains responsible over time.'}
               </p>
             </div>
@@ -264,11 +264,11 @@ const HomePage: React.FC = () => {
           <div>
             <span className="section-eyebrow">{lang === 'zh' ? '可信基础设施' : 'Trust Assurance'}</span>
             <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
-              {lang === 'zh' ? '让公共系统能够被授权、被使用、被审阅' : 'So Public Systems Can Be Authorised, Used and Reviewed'}
+              {lang === 'zh' ? '让公共系统可授权、可使用、可审阅' : 'So Public Systems Can Be Authorised, Used and Reviewed'}
             </h2>
             <p className="mt-6 text-lg font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '可信公共系统不只需要清晰界面，更需要可解释的公共授权、可追溯的证据、可执行的服务规则和可持续的监督能力。赛域实验室把这些要求前置为系统架构的一部分。'
+                ? '可信公共系统不只需要清晰界面，更需要可解释的公共授权、可追溯的证据、可执行的服务规则和可持续的监督能力。赛域实验室把这些要求前置到系统架构之中。'
                 : 'A trusted public system needs more than a polished interface. It requires explainable mandate, traceable evidence, enforceable service rules and durable oversight. CAL treats these requirements as the architecture itself.'}
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -292,7 +292,7 @@ const HomePage: React.FC = () => {
             <span className="section-eyebrow">{lang === 'zh' ? '运行信号' : 'Operating Signals'}</span>
             <p className="mt-4 font-serif text-2xl leading-snug text-white md:text-3xl">
               {lang === 'zh'
-                ? '如果一个系统要长期存在，它必须让授权、身份、服务、证据和监督彼此对齐。'
+                ? '一个公共系统若要长期存在，授权、身份、服务、证据与监督必须彼此对齐。'
                 : 'For a system to endure, mandate, identity, services, evidence and oversight must remain aligned.'}
             </p>
           </div>
@@ -362,12 +362,12 @@ const HomePage: React.FC = () => {
             </span>
             <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
               {lang === 'zh'
-                ? '从最初授权到长期管护'
+                ? '从最初授权走向长期管护'
                 : 'From First Mandate to Long-Term Stewardship'}
             </h2>
             <p className="mt-6 text-lg font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '赛域实验室不以一次性交付为中心，而是帮助公共机构把复杂愿景转化为可授权、可建设、可监督、可长期维护的制度基础设施。每一阶段都指向同一件事：让系统在清晰公共责任之下稳定运行。'
+                ? '赛域实验室不以一次性交付为中心，而是帮助公共机构把复杂愿景转化为可授权、可建设、可监督、可长期维护的制度基础设施。每一阶段都服务于同一目标：让系统在清晰公共责任之下稳定运行。'
                 : 'CAL is not organised around one-off deliverables. It helps public institutions translate complex ambitions into infrastructure that can be authorised, built, supervised and maintained. Each phase serves the same objective: systems that operate under public responsibility.'}
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">

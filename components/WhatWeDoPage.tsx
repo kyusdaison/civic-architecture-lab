@@ -15,10 +15,10 @@ const WhatWeDoPage: React.FC = () => {
 
   const methodPrinciples: MethodPrinciple[] = lang === 'zh'
     ? [
-        { title: '授权先于方案', text: '先确认公共目的、法律边界与发起机构，再进入技术或产品层面的设计。', icon: Landmark },
-        { title: '制度先于界面', text: '先设计责任结构、服务规则与监督路径，界面只是制度运行的外显层。', icon: Scale },
-        { title: '证据先于规模', text: '每一项身份、服务与记录都应具备可审阅、可验证、可追责的证据基础。', icon: Database },
-        { title: '管护先于扩张', text: '长期治理、运行责任与公共信任机制必须在扩张之前被设计清楚。', icon: ShieldCheck },
+        { title: '授权先于方案', text: '先确认公共目的、法律边界和发起机构，再进入方案与技术层面的设计。', icon: Landmark },
+        { title: '制度先于界面', text: '责任结构、服务规则和监督路径先成立，界面才有可信运行基础。', icon: Scale },
+        { title: '证据先于规模', text: '身份、服务与记录需要先具备可审阅、可验证、可追责的证据基础。', icon: Database },
+        { title: '管护先于扩张', text: '长期治理、运行责任和公共信任机制，应当在规模化之前设计清楚。', icon: ShieldCheck },
       ]
     : [
         { title: 'Mandate before solution', text: 'Public purpose, legal perimeter and institutional sponsor are clarified before product or technology choices.', icon: Landmark },
@@ -28,19 +28,19 @@ const WhatWeDoPage: React.FC = () => {
       ];
 
   const doctrineSequence = lang === 'zh'
-    ? ['公共目的', '机构责任', '身份与服务', '证据与监督']
+    ? ['公共目的', '机构责任', '身份与服务', '证据监督']
     : ['Public purpose', 'Institutional responsibility', 'Identity & services', 'Evidence & oversight'];
 
   const titleLines = lang === 'zh'
-    ? ['制度设计实验室', '不是普通咨询机构']
+    ? ['制度设计能力', '不是普通咨询机构']
     : ['An Institutional Design Lab', 'Not an Ordinary Consultancy'];
 
   const operatingQuestions = lang === 'zh'
     ? [
-        '谁拥有公共授权？',
+        '公共授权由谁持有？',
         '哪个机构承担长期责任？',
-        '身份、服务与数据如何被验证？',
-        '监督方如何审阅运行证据？',
+        '身份、服务与记录如何被验证？',
+        '监督方如何审阅运行过程？',
       ]
     : [
         'Who holds the public mandate?',
@@ -50,7 +50,7 @@ const WhatWeDoPage: React.FC = () => {
       ];
 
   const audienceFrame = lang === 'zh'
-    ? '适用于需要把公共授权、数字身份、服务访问、合规监督与长期运行放在同一制度框架下推进的机构。'
+    ? '适用于需要把公共授权、数字身份、服务访问、合规监督和长期运行放在同一制度框架下推进的机构。'
     : 'Built for institutions that need public mandate, digital identity, service access, compliance oversight and long-term operations to work inside one governed framework.';
 
   return (
@@ -87,11 +87,11 @@ const WhatWeDoPage: React.FC = () => {
           <div>
             <span className="section-eyebrow">{lang === 'zh' ? '方法论' : 'Doctrine'}</span>
             <h2 className="mt-4 font-serif text-3xl tracking-tight text-white md:text-[2.55rem]">
-              {lang === 'zh' ? '把复杂公共系统变成可治理的制度架构' : 'Turning complex public systems into governable institutional architecture'}
+              {lang === 'zh' ? '把复杂公共系统设计成可治理的制度架构' : 'Turning complex public systems into governable institutional architecture'}
             </h2>
             <p className="mt-6 text-base font-light leading-relaxed text-gray-300">
               {lang === 'zh'
-                ? '赛域实验室不从功能清单开始，而是从公共授权、责任边界、证据链条与运行管护开始。只有先把这些基础关系设计清楚，系统才可能被政府、监管方、合作机构和公众长期信任。'
+                ? '赛域实验室不从功能清单开始，而是从公共授权、责任边界、证据链条与运行管护开始。只有先把这些基础关系设计清楚，系统才可能被政府、监管方、合作机构与公众长期信任。'
                 : 'CAL does not begin with a feature list. It begins with public mandate, accountability boundaries, evidence chains and operating stewardship, so the resulting system can be trusted by governments, regulators, partners and the public over time.'}
             </p>
           </div>
