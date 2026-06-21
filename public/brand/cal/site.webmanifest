@@ -1,6 +1,7 @@
 {
-  "name": "Civic Architecture Lab",
+  "name": "Civic Architecture Lab | 赛域公共制度架构实验室",
   "short_name": "CAL",
+  "description": "Institutional Design & Digital Public Infrastructure / 制度设计与数字公共基础设施. Powered by Future Citizen Bureau.",
   "icons": [
     {
       "src": "/brand/cal/png/cal-icon-192.png",
