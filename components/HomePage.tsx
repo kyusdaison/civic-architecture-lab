@@ -56,6 +56,23 @@ const HomePage: React.FC = () => {
           { label: 'Not private-migration framing', value: 'Built for public systems and trusted participation' },
         ];
 
+  const operatingStandard =
+    lang === 'zh'
+      ? [
+          { code: '01', title: '公共授权', text: '谁授权、为了什么公共目的、边界在哪里。' },
+          { code: '02', title: '身份准入', text: '谁可以参与、如何识别、凭证如何被信任。' },
+          { code: '03', title: '服务规则', text: '可以访问哪些服务、规则如何执行、责任如何分配。' },
+          { code: '04', title: '证据记录', text: '关键行为如何留下记录、如何被复核与审计。' },
+          { code: '05', title: '监督管护', text: '谁持续负责、如何纠偏、如何长期维护公共价值。' },
+        ]
+      : [
+          { code: '01', title: 'Public Mandate', text: 'Who authorises the system, for what public purpose, and within which perimeter.' },
+          { code: '02', title: 'Identity & Access', text: 'Who can participate, how identity is recognised, and why credentials can be trusted.' },
+          { code: '03', title: 'Service Rules', text: 'Which services can be accessed, how rules are enforced, and where responsibilities sit.' },
+          { code: '04', title: 'Evidence Records', text: 'How critical actions leave records that can be reviewed, audited and governed.' },
+          { code: '05', title: 'Oversight & Stewardship', text: 'Who remains responsible, how corrections happen, and how public value is maintained.' },
+        ];
+
   const assurancePrinciples =
     lang === 'zh'
       ? [
@@ -203,6 +220,55 @@ const HomePage: React.FC = () => {
               <p className="font-serif text-xl leading-snug text-white">{point.value}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="px-6 pb-20 pt-4">
+        <div className="mx-auto max-w-7xl">
+          <div className="operating-standard">
+            <img
+              src="/visuals/cal/v5/public-system-operating-standard.webp"
+              alt=""
+              loading="lazy"
+              decoding="async"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <div className="operating-standard-shade" />
+            <div className="relative grid gap-10 p-6 md:p-8 lg:grid-cols-[0.92fr_1.08fr] lg:p-10">
+              <div className="max-w-2xl">
+                <span className="section-eyebrow">
+                  {lang === 'zh' ? '制度运行标准' : 'Operating Standard'}
+                </span>
+                <h2 className="mt-4 font-serif text-3xl leading-tight text-white md:text-[2.35rem]">
+                  {lang === 'zh'
+                    ? '一套可信公共系统，必须先回答五个制度问题'
+                    : 'A trusted public system must answer five institutional questions first'}
+                </h2>
+                <p className="mt-5 text-base font-light leading-relaxed text-gray-300">
+                  {lang === 'zh'
+                    ? '赛域实验室把这些问题放在技术建设之前。只有授权、身份、服务、证据与监督同时清楚，数字公共基础设施才具备被采用、被复核和长期运行的基础。'
+                    : 'CAL places these questions before technical delivery. Digital public infrastructure becomes adoptable, reviewable and durable only when mandate, identity, services, evidence and oversight are clear together.'}
+                </p>
+              </div>
+
+              <div className="standard-ledger">
+                {operatingStandard.map((item) => (
+                  <div key={item.code} className="standard-ledger-row">
+                    <span>{item.code}</span>
+                    <div>
+                      <h3>{item.title}</h3>
+                      <p>{item.text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="standard-axis" aria-hidden="true">
+              {systemPillars.map((pillar) => (
+                <span key={pillar}>{pillar}</span>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
